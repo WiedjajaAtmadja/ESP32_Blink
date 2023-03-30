@@ -1,4 +1,12 @@
 /*
+Builtins USB Serial, JTAG ESP32-C3
+ESP32-C3 pins and USB signals
+ESP32-C3    Pin USB Signal
+GPIO18          D-
+GPIO19          D+
+5V              V_BUS
+GND             Ground
+
 JTAG 
 ESP32-C3 NodeMCU_ESP_C3_13
 IO4 TMS
