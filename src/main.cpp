@@ -53,6 +53,7 @@ Free heap: 303668 bytes, Free PSRAM: 0 bytes
 
 void setup() {
   Serial.begin(115200);
+  
   for (uint8_t i = 0; i < LEDS_COUNT; i++) {
     pinMode(arLeds[i], OUTPUT);
   }
@@ -70,6 +71,6 @@ void loop() {
     digitalWrite(arLeds[i], HIGH);
     delay(50);
     digitalWrite(arLeds[i], LOW);
-    delay(2950);
+    delay(950);
   }  
 }
