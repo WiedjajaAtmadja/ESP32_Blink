@@ -1,4 +1,6 @@
 /*
+ESP32-S3-DevKitC-1 using USB debugging OK
+
 Builtins USB Serial, JTAG ESP32-C3
 ESP32-C3 pins and USB signals
 ESP32-C3    Pin USB Signal
@@ -45,6 +47,11 @@ Free heap: 303668 bytes, Free PSRAM: 0 bytes
   const uint8_t arLeds[] = {LED_RGB_RED, LED_RGB_GREEN, LED_RGB_BLUE, LED_COLD, LED_WARM};
   const char* arLedsNames[] = {"LED_RGB_RED", "LED_RGB_GREEN", "LED_RGB_BLUE", "LED_COLD", "LED_WARM"};
 #elif defined(BOARD_ESP_C3_12F)
+  #define LED_EXT    10
+  #define LEDS_COUNT  1
+  const uint8_t arLeds[] = {LED_EXT};
+  const char* arLedsNames[] = {"LED_EXT"};
+#elif defined(BOARD_ESP32_S3_DEVKITC_1)
   #define LED_EXT    10
   #define LEDS_COUNT  1
   const uint8_t arLeds[] = {LED_EXT};
