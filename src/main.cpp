@@ -55,7 +55,7 @@ Free heap: 303668 bytes, Free PSRAM: 0 bytes
   #define LED_EXT    10
   #define LEDS_COUNT  1
   const uint8_t arLeds[] = {LED_EXT};
-  const char* arLedsNames[] = {"LED_EXT"};
+  const char* arLedsNames[] = {"LED_EXT 10"};
 #endif
 
 void setup() {
